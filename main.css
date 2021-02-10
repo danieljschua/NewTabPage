@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); /* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"); /* Lato */
+
+/* General */
+:root {
+	--main-bg: #24252a;
+	--main-white: #edf0f1;
+	--alt-blue: #0088a9;
+	--alt-green: #388152;
+
+	--montserrat: "Montserrat", sans-serif;
+	--lato: "Lato", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	color: var(--main-white);
+	font-family: var(--montserrat);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: var(--main-bg);
+	/* overflow: hidden; */
+}
+
+a {
+	text-decoration: none;
+}
+.hover-color {
+	transition: color 0.3s ease-in-out;
+}
+.hover-color:hover {
+	color: var(--alt-blue);
+}
+
+.link-list {
+	list-style-type: none;
+}
+.link-list li {
+	padding: .5rem;
+}
+
+/* Header */
+header {
+	width: 75%;
+	height: 10%;
+	padding: 1rem;
+	margin: auto;
+	margin-bottom: 2rem;
+
+	display: flex;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 1.5rem;
+}
+
+/* aside */
+.toggle-button {
+	position: absolute;
+	top: 2rem;
+	right: 1rem;
+	width: 1.75rem;
+	height: 1.5rem;
+	padding: 0;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background: none;
+	border: none;
+	outline: none; /* prevents focusing */
+	cursor: pointer;
+}
+
+.toggle-button .bar {
+	background-color: var(--main-white);
+	width: 100%;
+	height: 0.2rem;
+}
+
+aside {
+	height: 100%;
+	width: 20vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	transform: translateX(10vh);
+	transition: transform 1s ease;
+	background-color: black;
+}
+.sidenav {
+	width: 20vh;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	transform: translateX(100px);
+	transition: transform 1s ease;
+}
+.sidenav ul {
+	height: 100%;
+	margin-left: -10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sidenav li {
+	padding: 1rem 0;
+}
+
+aside.active,
+.sidenav.active {
+	transform: translateX(0);
+}
+
+/* main */
+main {
+	width: 75%;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main .anchor,
+.blue,
+.red {
+	display: none;
+}
+
+h2 {
+	text-align: center;
+}
