@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Daniel Chua">
-  <meta name="description" content="Daniel's landing page">
+  <meta name="description" content="Daniel's Landing Page">
 
   <title>Landing Page</title>
   <link rel="stylesheet" href="main.css">
@@ -13,82 +13,74 @@
 
 <body>
   <header>
-    <h1>Landing Page</h1>
-    <!-- <nav class="topnav">
-      <ul class="link-list">
-        <li><a href="" class="hover-color">School</a></li>
-        <li><a href="" class="hover-color">Hobbies</a></li>
-        <li><a href="" class="hover-color">Entertainment</a></li>
-      </ul>
-    </nav> -->
-    <!-- <a class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a> -->
+    <h1 class="greeting"></h1> <!-- Dynamically rendered -->
+    <div class="search-container">
+      <input type="text" name="search-input" id="search-input" placeholder="Search Google..." tabindex="1">
+      <button class="search-button">
+        <img src="search.jpg" alt="search button">
+      </button>
+    </div>
   </header>
 
-  <button class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+  <button class="toggle-button">⚙</button>
   <aside>
-    <nav class="sidenav">
-      <ul class="link-list">
-        <li><a href="" class="hover-color">Show All</a></li>
-        <li><a href="" class="hover-color">Hobbies</a></li>
-        <li><a href="" class="hover-color">Entertainment</a></li>
-      </ul>
-    </nav>
+    <ul class="link-list">
+      <li class="hover-bg"><a class="toggle-link" href="#">Show All</a></li>
+      <hr>
+      <li class="hover-bg"><a href="https://www.youtube.com/" class="toggle-link">YouTube</a></li>
+      <li class="hover-bg"><a class="toggle-link" href="https://www.freecodecamp.org/learn/">FreeCodeCamp</a></li>
+      <li class="hover-bg"><a class="toggle-link" href="https://courses.edx.org/dashboard#">edX</a></li>
+      <li class="hover-bg"><a class="toggle-link" href="https://github.com/danieljschua">GitHub</a></li>
+      <li class="hover-bg"><a class="toggle-link" href="https://director.tjhsst.edu/">Director</a></li>
+    </ul>
   </aside>
 
   <main>
     <section class="quick-links">
       <h2>Quick Links</h2>
-      <ul class="link-list">
-        <li><a href="https://thelocker.io/dashboard" class="hover-color">The Locker</a></li>
-        <li><a href="https://fcps.blackboard.com/" class="hover-color">FCPS Blackboard</a></li>
-        <li><a href="https://classroom.google.com/u/0/h" class="hover-color">Google Classroom</a></li>
-        <li><a href="https://ion.tjhsst.edu/" class="hover-color">Ion</a></li>
-        <li><a href="https://drive.google.com/" class="hover-color">Drive</a></li>
-      </ul>
+      <a href="https://fcps.blackboard.com/" class="hover-color">Blackboard</a>
+      <a href="https://classroom.google.com/" class="hover-color">Classroom</a>
+      <a href="https://drive.google.com/" class="hover-color">Drive</a>
+      <a href="https://ion.tjhsst.edu/" class="hover-color">Ion</a>
+      <hr>
+      <a href="https://webmail.tjhsst.edu/#" class="hover-color">Webmail</a>
+      <a href="https://sisstudent.fcps.edu/SVUE/PXP2_Login_Student_OVR.aspx?regenerateSessionId=True"
+        class="hover-color">SIS</a>
+      <hr>
+      <a href="https://www.messenger.com/" class="hover-color">Messenger</a>
+      <a href="https://discord.com/channels/@me" class="hover-color">Discord</a>
+      <a href="https://slack.com/" class="hover-color">Slack</a>
     </section>
-    <section class="anchor">
-      <h2>Monday</h2>
-      <ul>
-        <li>
-          <a href="https://forms.gle/wNntHnxSjJuHXxoC9" class="hover-color">Attendance Form</a>
-        </li>
-      </ul>
-    </section>
-    <section class="blue">
-      <h2>Blue Days</h2>
-      <ul class="link-list">
-        <li><a href="" class="hover-color">Biology</a></li>
-        <li><a href="" class="hover-color">English</a></li>
-        <li><a href="" class="hover-color">Tech</a></li>
-        <li><a href="" class="hover-color">Math</a></li>
-      </ul>
-    </section>
-    <section class="red">
-      <h2>Red Days</h2>
-      <ul class="link-list">
-        <li><a href="" class="hover-color">Computer Science</a></li>
-        <li><a href="" class="hover-color">Spanish</a></li>
-        <li><a href="" class="hover-color">Band</a></li>
-        <li><a href="" class="hover-color">Homeroom</a></li>
-      </ul>
-      <h2>8th Period</h2>
-      <ul class="link-list">
-        <li><a href="" class="hover-color">Bible Study</a></li>
-        <li><a href="" class="hover-color">Dev Club</a></li>
-        <li><a href="" class="hover-color">Code++</a></li>
-        <li><a href="" class="hover-color">Botball</a></li>
-      </ul>
+    <section class="specifics">
+      <section class="anchor">
+        <h2>Monday</h2>
+        <a href="https://forms.gle/wNntHnxSjJuHXxoC9" class="hover-color">Attendance Form</a>
+      </section>
+      <section class="blue">
+        <h2>Blue Days</h2>
+        <a href="" class="hover-color">Bio</a>
+        <a href="" class="hover-color">English</a>
+        <a href="" class="hover-color">Tech</a>
+        <a href="" class="hover-color">Math</a>
+      </section>
+      <section class="red">
+        <h2>Red Days</h2>
+        <a href="" class="hover-color">CS</a>
+        <a href="" class="hover-color">Spanish</a>
+        <a href="" class="hover-color">Band</a>
+        <a href="" class="hover-color">Homeroom</a>
+        <h2>8th Period</h2>
+        <a href="" class="hover-color">Bible Study</a>
+        <a href="" class="hover-color">Dev Club/Botball</a>
+        <a href="" class="hover-color">Dev/BB Attendance Form</a>
+        <a href="" class="hover-color">Code++</a>
+        <a href="" class="hover-color">Code++ Attendance Form</a>
+      </section>
     </section>
   </main>
 
+  <script src="greeting.js"></script>
+  <script src="search.js"></script>
   <script src="display.js"></script>
   <script src="toggle.js"></script>
 </body>

@@ -23,3 +23,8 @@ const setDisplay = (day) => {
 }
 
 setDisplay(new Date().getDay());
+
+const showAllButton = document.getElementsByClassName('toggle-link')[0];
+showAllButton.addEventListener('click', () => {
+  showAll();
+});
