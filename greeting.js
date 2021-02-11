@@ -3,7 +3,7 @@ const hour = new Date().getHours();
 let msg;
 
 if(hour < 12)
-  msg = 'Good morning, Daniel';
+  msg = 'Good morning, Daniel.';
 else
   msg = 'Good afternoon, Daniel.';
 
