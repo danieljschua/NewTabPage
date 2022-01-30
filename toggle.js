@@ -5,5 +5,4 @@ const nav = document.getElementsByClassName('sidenav')[0];
 toggleButton.addEventListener('click', () => {
   aside.classList.toggle('active');
   nav.classList.toggle('active');
-  console.log('active toggled!');
 });
