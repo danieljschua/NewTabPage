@@ -4,7 +4,7 @@
 
 This page contains the links you use most often so that when you open a new tab, you can quickly navigate where you need to be. This page helps you get to your favorite websites, virtual classes, etc. more quickly.
 
-![New Tab Page Demo Image](./demo.png)
+![New Tab Page Demo Image](./assets/demo.png)
 
 ---
 
